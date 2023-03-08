@@ -13,7 +13,7 @@ const Modal = ({ isVisible, onClose, moreData }) => {
       onClick={handleClose}
       id="wrapper"
     >
-      <div className="w-[900px] flex flex-col">
+      <div className="w-[900px] flex flex-col md:m-0 m-2">
         <button
           className="text-white text-xl place-self-end"
           onClick={() => onClose()}
@@ -21,7 +21,7 @@ const Modal = ({ isVisible, onClose, moreData }) => {
           X
         </button>
         <div className="bg-white p-2 rounded">
-          <div className="flex justify-between items-center">
+          <div className="flex md:flex-row flex-col justify-between items-center ">
             <div className="h-full w-full pr-5 ">
               <img
                 className="h-58 w-50 border-solid border-4 border-indigo-600"
